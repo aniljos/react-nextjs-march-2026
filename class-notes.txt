@@ -3,6 +3,7 @@ React-Nextjs session 23-03-2026
 Git Url: https://github.com/aniljos/Nextjs-Feb-24-2025
 REST API Mock: https://github.com/aniljos/REST-API-Mock
 
+React CDN Links: https://legacy.reactjs.org/docs/cdn-links.html
 Babel cdn: https://cdnjs.com/libraries/babel-standalone/7.26.3
 
 Introduction: https://forms.gle/JJUREb7AcNcX5TXv5
