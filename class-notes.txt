@@ -9,6 +9,32 @@ Babel cdn: https://cdnjs.com/libraries/babel-standalone/7.26.3
 Introduction: https://forms.gle/JJUREb7AcNcX5TXv5
 
 
+React Components
+
+Types of components(based on coding): Functional and Class
+Types of components( based on rendering): client-side rendering(CSR) and server-side rendering(SSR)
+
+In Nextjs: default rendering is SSR
+
+-React Component props
+	- parameterize a component
+	- passing data from parent to child and vice-versa
+	- changes to props will re-render the component
+	- props is read-only
+React Component state
+	- internal to the component
+	- changes to state will re-render the component
+	- state changes are asynchronous
+	- state changes are batches
+	- setState
+		- setState(updatedValue)
+		- setState(callback)   (updatedValue callback(prevValue))
+
+input element
+	- binding using state(useState) => value, onChange : Controlled input
+	- Reference(useRef) to the input and read the value : Uncontrolled input
+
+
 				
 		
 
