@@ -15,7 +15,7 @@ export default function Counter(props: CounterProps) {
   function inc() {
     console.log("incrementing counter...");
     // setCount(count + 1);
-    // setCount(count + 1);
+     setCount(count + 1);
 
     setCount((prevCount) => prevCount + 1);
     //setCount((prevCount) => prevCount + 1);
