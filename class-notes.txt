@@ -30,14 +30,34 @@ React Component state
 	- setState
 		- setState(updatedValue)
 		- setState(callback)   (updatedValue callback(prevValue))
+React effects(useEffect)
+	- Hook into the lifecycle
+	- mount: 
+		- called once the component is mounted
+		- dependency array is empty
+		- API calls 
+		- DOM initialization
+		- Register to any events(document/window)
+	-unmount
+		- called once when the component is unmounted
+		- cancel the api calls
+		- Unregister to any events(document/window)
+	
+
 
 input element
 	- binding using state(useState) => value, onChange : Controlled input
 	- Reference(useRef) to the input and read the value : Uncontrolled input
 
-
+Navigation in React	
+	- There no apis that React provides for Navigation
+	- react-router-dom: 
+		- library for navigation
+		- Create-React-App or Vite 
+	- Next.js has a nvagiation library(The App and Page router)
 				
-		
+React Optimizations
+	- Components are granular( small components)
 
 	
 

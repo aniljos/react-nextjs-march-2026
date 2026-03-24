@@ -2,6 +2,8 @@ import Counter from "@/components/Counter";
 import Hello from "@/components/Hello";
 //import Hello from '../components/Hello';
 export default function Home() {
+
+  
   return (
     <div>
         <h2>React Next.js Application</h2>
