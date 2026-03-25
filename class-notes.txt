@@ -8,6 +8,7 @@ Babel cdn: https://cdnjs.com/libraries/babel-standalone/7.26.3
 
 Introduction: https://forms.gle/JJUREb7AcNcX5TXv5
 Quiz #1: https://forms.gle/qjXX2bLjauSy7D5LA
+Quiz #2: https://forms.gle/TTbaJ5xTtf5LfM8w9
 
 
 React Components
@@ -42,7 +43,9 @@ React effects(useEffect)
 		- called once when the component is unmounted
 		- cancel the api calls
 		- Unregister to any events(document/window)
-	
+	- update
+		- called when the component is rerendered
+		
 
 
 input element
