@@ -1,4 +1,4 @@
-type AuthState = {
+export type AuthState = {
     isAuthenticated: boolean;
     username: string;
     accessToken : string;
@@ -12,7 +12,7 @@ const initialState: AuthState = {
     refreshToken: ""
 }
 
-type AuthAction = {
+export type AuthAction = {
     type: string;
     payload? : AuthState
 }
