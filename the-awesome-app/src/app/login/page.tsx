@@ -4,6 +4,7 @@ import { SubmitEvent, useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useTitle } from "@/hooks/useTitle";
+import {useDispatch} from 'react-redux';
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -12,6 +13,7 @@ export default function Login() {
   const router = useRouter();
   const usernameRef = useRef<HTMLInputElement>(null);
   useTitle("Login");
+  const dispatch = useDispatch();
   //console.log("login rendered...");
   //useEffect invoked once when the component is mounted
   useEffect(() => {
@@ -37,11 +39,19 @@ export default function Login() {
         const response = await axios.post(url, { name: username, password });
         console.log("response", response);
         setMessage("");
+        dispatch({type: "login", payload: {
+          isAuthenticated: true, 
+          username, 
+          accessToken: response.data.accessToken, 
+          refreshToken: response.data.refreshToken
+        }})
+
         router.push("/");
 
       } catch (error) {
         console.log("errorResponse", error);
         setMessage("Invalid credentials")
+        dispatch({type: "logout"});
       }
       
 

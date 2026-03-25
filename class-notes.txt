@@ -67,6 +67,14 @@ React Design & Optimizations
 		- React.memo(component)
 		- The component re-renders only if the props or state changes
 
+Session State(in the browser)
+	- LocalStorage & SessionStorage
+	- Cookies
+	- Memory
 	
+Redux
+	- Action is an object with a type & a payload
+		- {type: "save_token", token: "abc"}
+		- {type: "clear_token"}
 
 
