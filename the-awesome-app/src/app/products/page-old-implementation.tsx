@@ -6,23 +6,33 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ProductView } from "./ProductView";
 import { useTitle } from "@/hooks/useTitle";
-import { useProducts } from "@/hooks/useProducts";
 
 const url = "http://localhost:9000/products";
 
 export default function ListProducts() {
 
-  
+  const [products, setProducts] = useState<Product[]>([]);
   const [isMessageVisible, setMessageVisible] = useState(true);
   const router = useRouter();
   useTitle("List Products");
-  const {products, setProducts} = useProducts();
 
   
 
- 
-  
-  // eslint-disable-next-line react-hooks/preserve-manual-memoization
+  async function fetchProducts() {
+
+    try {
+      const response = await axios.get<Product[]>(url);
+      console.log(response);
+      setProducts(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    fetchProducts();
+  }, []);
+
   const  deleteProduct = useCallback(async (product: Product)=>{
 
     const deleteUrl = url + "/" + product.id;

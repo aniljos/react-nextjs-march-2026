@@ -59,8 +59,13 @@ Navigation in React
 		- Create-React-App or Vite 
 	- Next.js has a nvagiation library(The App and Page router)
 				
-React Optimizations
+React Design & Optimizations
 	- Components are granular( small components)
+	- Custom Hooks: reuseable, function thats uses existing hooks.
+	- memoization: 
+		- like caching 
+		- React.memo(component)
+		- The component re-renders only if the props or state changes
 
 	
 
