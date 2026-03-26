@@ -9,6 +9,7 @@ Babel cdn: https://cdnjs.com/libraries/babel-standalone/7.26.3
 Introduction: https://forms.gle/JJUREb7AcNcX5TXv5
 Quiz #1: https://forms.gle/qjXX2bLjauSy7D5LA
 Quiz #2: https://forms.gle/TTbaJ5xTtf5LfM8w9
+Quiz #3: https://forms.gle/nqXeDHsZ8qLXoRUH7
 
 
 React Components
@@ -76,5 +77,18 @@ Redux
 	- Action is an object with a type & a payload
 		- {type: "save_token", token: "abc"}
 		- {type: "clear_token"}
+	- Reducer is a function 
+		- receives the actions
+		- updates the store
+React-redux
+	- Provider: component to integrate the store with the react application
+	- Hooks	
+		- useDispatch: returns the dispatch method
+		- useStore: returns a reference to the store
+		- useSelector: return a subset(of the state) in redux and subscribe to the store
+Redux Tooklit
+	- implementations of redux patterns
+	- opiniontaed framework
+	
 
 
