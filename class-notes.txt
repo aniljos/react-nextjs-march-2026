@@ -88,7 +88,17 @@ React-redux
 		- useSelector: return a subset(of the state) in redux and subscribe to the store
 Redux Tooklit
 	- implementations of redux patterns
-	- opiniontaed framework
+	- opinionted framework
+	- slices => alternative to reducers
+		- treat state as mutable
+		- generates the reducer code
+	
+	
+State Management libraries
+	- React context
+	- Zustand
+	
+	
 	
 
 
