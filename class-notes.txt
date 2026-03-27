@@ -6,10 +6,13 @@ REST API Mock: https://github.com/aniljos/REST-API-Mock
 React CDN Links: https://legacy.reactjs.org/docs/cdn-links.html
 Babel cdn: https://cdnjs.com/libraries/babel-standalone/7.26.3
 
+Multizones: https://github.com/aniljos/Nextjs-multizones
+
 Introduction: https://forms.gle/JJUREb7AcNcX5TXv5
 Quiz #1: https://forms.gle/qjXX2bLjauSy7D5LA
 Quiz #2: https://forms.gle/TTbaJ5xTtf5LfM8w9
 Quiz #3: https://forms.gle/nqXeDHsZ8qLXoRUH7
+Quiz #4: 
 
 
 React Components
@@ -80,6 +83,7 @@ Redux
 	- Reducer is a function 
 		- receives the actions
 		- updates the store
+		- always synchronous(cannot make an api call or other async tasks)
 React-redux
 	- Provider: component to integrate the store with the react application
 	- Hooks	
@@ -92,11 +96,21 @@ Redux Tooklit
 	- slices => alternative to reducers
 		- treat state as mutable
 		- generates the reducer code
+		- geneartes the action creators(actions creators are helper function to create an action)
 	
 	
 State Management libraries
 	- React context
 	- Zustand
+	- MobX
+	
+React Context
+	- State manegement 
+	- React 16.3
+	- Compared to redux
+		- low-level api(app need manage state etc)
+		- There can be multiple contexts vs. In redux a single store
+		
 	
 	
 	
