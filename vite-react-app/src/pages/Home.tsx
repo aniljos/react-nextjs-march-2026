@@ -1,5 +1,5 @@
-import Counter from "@/components/Counter";
-import Hello from "@/components/Hello";
+import Counter from "../components/Counter";
+import Hello from "../components/Hello";
 //import Hello from '../components/Hello';
 export default function Home() {
 

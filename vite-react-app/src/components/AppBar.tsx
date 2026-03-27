@@ -1,6 +1,6 @@
 'use client'
 
-import { AppThemeContext } from "@/context/AppThemeContext";
+import { AppThemeContext } from "../context/AppThemeContext";
 import {Link} from "react-router-dom";
 import { useContext } from "react";
 
