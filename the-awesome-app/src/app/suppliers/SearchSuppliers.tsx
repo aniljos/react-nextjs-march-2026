@@ -11,6 +11,7 @@ export default function SearchSuppliers({data}: SearchSuppliersProps){
 
     const [searchText, setSearchText] = useState("")
     const [suppliers, setSuppliers] = useState(data);
+    
     async function search(){
         try {
             const url = "http://localhost:3000/api/suppliers?q=" + searchText;

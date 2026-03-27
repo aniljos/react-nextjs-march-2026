@@ -1,6 +1,6 @@
 'use client'
 
-import React, { JSX, useState } from "react";
+import React, { type JSX, useState } from "react";
 
 export type ThemeState = {
     mode: string;

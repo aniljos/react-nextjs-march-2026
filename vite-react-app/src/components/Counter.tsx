@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, useEffect, useEffectEvent, useRef, useState } from "react";
+import { type ChangeEvent, useEffect, useEffectEvent, useRef, useState } from "react";
 
 // <Counter count={5} />
 

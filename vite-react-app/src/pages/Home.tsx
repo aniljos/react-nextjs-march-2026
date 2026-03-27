@@ -12,7 +12,7 @@ export default function Home() {
 
         <Counter count={5}/>
         {/* <Counter count={12}/> */}
-
+        
     </div>
   );
 }
